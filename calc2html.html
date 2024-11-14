@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="calc2javascript.js"></script>
+	<link rel="stylesheet" href="calc2css.css">
+	<!--<script type="text/javascript">
+		var a="";
+		var c="";
+		function copy(x)
+		{
+			c=c+x
+			if (x=='÷') {
+				a=a+'/';
+			}
+			else if (x=='x'){
+				a=a+'*'
+			}
+			else{
+				a=a+x;
+			}
+			document.getElementById("num").value=c;
+		}
+
+		function clr()
+		{
+		
+			a="0"
+			
+			document.getElementById("num").value=a;
+			c="";
+
+		}
+
+		function result()
+		{
+			document.getElementById("num").value=eval(a);
+		}
+	</script>-->
+</head>
+<body style="background-image: url('mathbg.avif'); background-repeat: no-repeat; background-size: cover;" >
+	<center>
+	<!--<style>
+	.box{
+		width: 375px;
+		height: 590px;
+		padding: 10px;
+		margin: 100px;
+		border: 5px solid black;
+		background-color: #FFFFFF;
+		border-radius: 30px;
+	}
+
+	.buttonstyle{
+		  background-color: #F2F0EF;
+		  border-color: black;
+		  color: black;
+		  padding: 30px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 25px;
+		  margin: 3px 3px;
+		  border-radius: 50%;
+		  cursor: pointer;
+}
+	.buttonstyle:hover{
+		box-shadow: 0 8px 8px 0 rgba(0,0,0,0.15),0 8px 8px 0 rgba(0,0,0,0.15);
+		background-color: #e0e0e0;
+	}
+	.buttonstyle2{
+		  
+		  background-color: #ffa500;
+		  color: white;
+		  padding: 30px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 25px;
+		  margin: 3px 3px;
+		  border-radius: 30px;
+		  border-color: black;
+		  cursor: pointer;
+	}
+	.buttonstyle2:hover{
+		box-shadow: 0 8px 8px 0 rgba(0,0,0,0.15),0 8px 8px 0 rgba(0,0,0,0.15);
+		background-color: #f68c00;
+	}
+	.button-container {
+	  display: grid;
+	  grid-template-rows: repeat(4, 1fr); /* Creates 3 rows of equal height */
+	  height: fit-content; /* Adjust the height of the container */
+	}
+	.inputbox{
+		  font-size: 50px;
+	      text-align: right;
+	      padding: 20px;
+	      background-color: #333;
+	      color: white;
+	      border-radius: 30px;
+	      min-height: 50px;
+	      width: 300px;
+	}
+
+
+	}
+</style>-->
+	<div class="box">    
+		<input type="text" name="" id="num" class="inputbox" value="0"><br><br>	
+		<button type="button" onclick="copy(7)" class="buttonstyle">7</button>
+		<button type="button" onclick="copy(8)" class="buttonstyle">8</button>
+		<button type="button" onclick="copy(9)" class="buttonstyle">9</button>
+		<button type="button" onclick="copy('+')" class="buttonstyle2">+</button><br><br>
+		<button type="button" onclick="copy(4)" class="buttonstyle">4</button>
+		<button type="button" onclick="copy(5)" class="buttonstyle">5</button>
+		<button type="button" onclick="copy(6)" class="buttonstyle">6</button>
+		<button type="button" onclick="copy('-')" class="buttonstyle2">-</button><br><br>
+		<button type="button" onclick="copy(1)" class="buttonstyle">1</button>
+		<button type="button" onclick="copy(2)" class="buttonstyle">2</button>
+		<button type="button" onclick="copy(3)" class="buttonstyle">3</button>
+		<button type="button" onclick="copy('x')" class="buttonstyle2">x</button><br><br>
+		<button type="button" onclick="copy(0)" class="buttonstyle2">0</button>
+		<button type="button" onclick="clr()" class="buttonstyle2">C</button>
+		<button type="button" onclick="result()" class="buttonstyle2">=</button>
+		<button type="button" onclick="copy('÷')" class="buttonstyle2">÷</button><br><br>
+	</center>
+</body>
+</html>
